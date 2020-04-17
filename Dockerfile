@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN python3 -m pip install -U pip
 RUN python3 -m pip install Sphinx==3.0.1 Pillow
+RUN mkdir environments \
+    && python3 -m venv environments/py3
 
 USER ${user}
 
