@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m pip install -U pip
-RUN python3 -m pip install Sphinx==3.0.1 Pillow python-levenshtein
+RUN python3 -m pip install Sphinx==3.2.1 Pillow python-levenshtein
 RUN mkdir environments \
     && python3 -m venv environments/py3
 
