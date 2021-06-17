@@ -5,6 +5,7 @@ LABEL MAINTAINER="Juan Luis Rodriguez <juanluisrp@geocat.net>"
 USER root
 RUN apt-get update && apt-get install -y \
         git \
+        ant \
         graphviz \
         imagemagick \
         make \
