@@ -8,12 +8,13 @@ RUN apt-get update && apt-get install -y \
         ant \
         graphviz \
         imagemagick \
-        make \
         python3 \
         python3-pip \
         python3-venv \
+        python3-dev \
         zlib1g \
         zlib1g-dev \
+        build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m pip install -U pip \
