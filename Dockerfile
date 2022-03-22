@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
         python3-pip \
         python3-venv \
         zlib1g \
-        zlib1g-dev
+        zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python3 -m pip install -U pip \
