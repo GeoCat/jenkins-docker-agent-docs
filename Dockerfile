@@ -24,6 +24,9 @@ RUN python3 -m pip install -U pip \
   && mkdir -p /root/environments \
   && python3 -m venv /root/environments/py3
 
+RUN mkdir /workspace
+RUN chown jenkins:jenkins /workspace
+
 USER jenkins
 RUN python3 -m pip install -U pip \
   && python3 -m pip install Sphinx==3.5.4 Pillow python-levenshtein \
