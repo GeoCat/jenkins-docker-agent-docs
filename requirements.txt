@@ -1,0 +1,6 @@
+Sphinx==4.5.0
+Pillow
+python-levenshtein
+recommonmark
+sphinx-copybutton
+hieroglyph
