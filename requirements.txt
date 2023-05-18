@@ -1,6 +1,8 @@
-Sphinx==4.5.0
-Pillow
-python-levenshtein
-recommonmark
-sphinx-copybutton
-hieroglyph
+Sphinx
+sphinx-autobuild >= 2021.3.14
+hieroglyph >= 2.1.0
+Pillow >= 9.5.0
+python-levenshtein >= 0.21.0
+myst-parser >= 1.0.0
+sphinx-copybutton >= 0.5.2
+sphinx_rtd_theme >= 1.2.0
