@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY requirements.txt /tmp/requirements.txt
 
+ENV PIP_BREAK_SYSTEM_PACKAGES 1
 RUN curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash \
   && mv tx /usr/local/bin \
   && chmod +x /usr/local/bin/tx \
